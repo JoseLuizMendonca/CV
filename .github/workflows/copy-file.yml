@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Copy File
-      run: cp /../../src/cv.pdf .
+      run: cp ../../src/cv.pdf .
