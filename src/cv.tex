@@ -186,7 +186,7 @@
 
 \divider
 
-\cvevent{Mechaniker}{Hofgut Wiggenweiler}{April 2022 -- Februar 2023}{Bermatingen}
+\cvevent{Mechanic}{Hofgut Wiggenweiler}{April 2022 -- Februar 2023}{Bermatingen}
 \begin{itemize}
   \item Maintenance and operation of tractors, telehandlers, and other heavy vehicles
   \item Inventory management
@@ -200,6 +200,8 @@
 \begin{itemize}
 \item Creation of testbenches for temperature measurements in metal props
 \item Prototype creation using 3D-Printing and CNC machinning
+\item Designing various parts for 3D motors, and using mostly Fusion360
+\item Documenting work with LaTeX 
 \end{itemize}
 
 \divider
@@ -209,11 +211,11 @@
   \item Team management (Mostly done through Github)
   \item Developing Software for a 6-wheeled rocker buggy style rover (Using ROS Humble as middleware, and Python for most of the nodes)
   \item Creation of Docker applications
-  \item Setting up CAN communication between VESCS and controller
+  \item Setting up CAN communication between ODrives (motor controller) and controller
   \item Supporting Mechanics team in areas of expertise (machining, chassis design, teaching new team members about technical drawings, design considerations, etc)
 \end{itemize}
 
-\medskip
+\bigskip
 
 \cvsection{A week in my life}
 
@@ -224,12 +226,18 @@
 \hspace*{-1em}  %% quick hack to move the wheelchart a bit left
 \wheelchart{1.5cm}{0.5cm}{%
   25/10em/accent!30/Sleeping,
-  10/11em/accent!10/ Miscellaneous,
+  10/11em/accent!30/ Miscellaneous,
+  3/11em/accent!10/ Out in the woods riding my bike,
   15/9em/accent!60/ Lectures,
-  25/11em/accent!10/ Working in the lab or teaching at the Uni,
-  3/11em/accent!40/Out in the woods riding my downhill bike,
-  2/11em/accent!40/Gym
+  10/9em/accent!60/ Leisure,
+  20/11em/accent!10/ Working in the lab or teaching at the Uni,
+  5/11em/accent!40/Gym
 }
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
 \newpage
@@ -343,6 +351,26 @@
 \cvsection{Education}
 
 \cvevent{E-Mobility and Green Energy}{Hochschule Ravensburg-Weingarten}{March 2022 -- }{}
+
+\newpage
+
+\cvsection{About me}
+
+\cvevent{International Experiences}{}{}{}
+\begin{itemize}
+\item Visited more than 25 countries over the last 10 years
+\item Took part in several interchanges, and active member of CISV
+\item Student buddy for international students in the RWU
+\end{itemize}
+
+\divider
+
+\cvevent{Hobbies}{}{}{}
+\begin{itemize}
+  \item Loves to play piano, or to jam with friends
+  \item Big fan of downhill MTB, loves to ride bikes in way they are not ment to be ridden
+  \item Loves cooking good meat, nothing better than a barbecue
+\end{itemize}
 
 %\divider
 
