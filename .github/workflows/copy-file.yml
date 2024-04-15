@@ -1,0 +1,17 @@
+name: Copy File
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      
+    - name: Copy File
+      run: cp src/cv.pdf .
