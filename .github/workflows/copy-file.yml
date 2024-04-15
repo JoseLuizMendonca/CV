@@ -1,4 +1,4 @@
-name: Copy File
+name: Upload CV File
 
 on:
   push:
@@ -6,33 +6,15 @@ on:
       - main
 
 jobs:
-  copy-file:
+  upload-cv:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
       
-    - name: Copy File
-      run: cp src/cv.tex .
-      name: Upload CV File
-
-      on:
-        push:
-          branches:
-            - main
-      
-      jobs:
-        upload-cv:
-          runs-on: ubuntu-latest
-          
-          steps:
-          - name: Checkout Repository
-            uses: actions/checkout@v2
-            
-          - name: Upload CV File
-            uses: actions/upload-artifact@v2
-            with:
-              name: cv
-              path: src/cv.tex
-      
+    - name: Upload CV File
+      uses: actions/upload-artifact@v2
+      with:
+        name: cv
+        path: src/cv.tex
